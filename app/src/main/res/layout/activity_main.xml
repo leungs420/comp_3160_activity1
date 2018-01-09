@@ -23,6 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="37dp"
         android:ems="10"
+        android:hint="Input Your Text"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="54dp" />
