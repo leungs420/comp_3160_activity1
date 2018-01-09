@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
     String result = "";
@@ -21,8 +22,9 @@ public class Main2Activity extends AppCompatActivity {
             result = extras.getString("send");
         }
 
+        TextView textTo = (TextView)findViewById(R.id.result_view1);
+        textTo.setText(result);
         text = result.toUpperCase();
-        System.out.println(text);
 
         Button btn = (Button) findViewById(R.id.btn3);
         btn.setOnClickListener(new View.OnClickListener() {
